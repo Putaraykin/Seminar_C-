@@ -6,14 +6,15 @@ int ReadInt(string message)
 Console.Write(message);
 return Convert.ToInt32(Console.ReadLine());
 }
-if (DayNumber <= 5)
-    {
-    Console.WriteLine ("Нет, не выходной ((");
-    }
-    else 
-    if (DayNumber == 6 || DayNumber == 7)
+if (DayNumber < 1 | DayNumber > 7)
+         {
+          Console.WriteLine ("Введена цифра не от 1 до 7");
+          }
+if (DayNumber == 6 | DayNumber == 7)
     {
     Console.WriteLine ("Ура, выходной");
     }
- else 
-    Console.WriteLine ("Введена цифра не от 1 до 7");
+if (DayNumber >= 1 & DayNumber <= 5)
+    {
+    Console.WriteLine ("Нет, не выходной ((");
+    }    
