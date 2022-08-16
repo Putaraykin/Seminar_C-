@@ -22,9 +22,5 @@ else if(Quarter == 4)
 }
 else Console.WriteLine ("Четверть определить не удалось");
 
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+
 
