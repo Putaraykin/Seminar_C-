@@ -21,7 +21,8 @@ void FillArrayRandomNumbres(double[] array)
 {
     for(int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(-20, 20)+0.12;      
+        Random rand = new Random();
+        array[i] = rand.Next(-100, 100) + rand.NextDouble();        
     }
 }
 void PrintArray(double[] array)
