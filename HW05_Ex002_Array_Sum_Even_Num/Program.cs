@@ -5,13 +5,15 @@ int Size = 4;
 int Sum = 0;
 int[] numbers = new int[Size];
 FillArrayRandomNumbres(numbers);
+for(int i = 0; i < numbers.Length/2; i++)
+{
+   numbers[i] = numbers[numbers.Length-1];
+}
 PrintArray(numbers);
 for(int i = 0; i < numbers.Length; i++)
 {
-    if(i%2 != 0)
-    Sum += numbers[i];
+   Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях, равна {Sum}");
 }
-Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях, равна {Sum}");
 void FillArrayRandomNumbres(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
