@@ -19,7 +19,7 @@ void PrintArray(int[,] matr)
         Console.WriteLine();
     }
 }
-void FillRndDoubleArray(int[,] matr)
+void FillRndArray(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -30,7 +30,7 @@ void FillRndDoubleArray(int[,] matr)
         }
     }
 }
-FillRndDoubleArray(matrix);
+FillRndArray(matrix);
 Console.WriteLine("Введите номер строки элемента массива:");
 int row = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите номер столбца элемента массива:");
